@@ -26,6 +26,7 @@
               placeholder="example@shaw.ca"
               type="text"
               v-model="email"
+              class="input-email"
             />
             <div class="icon-div">
               <img
@@ -45,6 +46,7 @@
             id="password"
             type="password"
             v-model="password"
+            class="input-password"
           />
         </div>
 
@@ -247,6 +249,18 @@ async function signIn() {
   /* border-radius: 5px; */
 }
 
+.navbar button {
+    background: #fff;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    font-size: 10px;
+    padding: 0 7px 0 12px;
+    width: 74px;
+    height: 24px;
+    font-weight: 500;
+    font-family: Arial, "Helvetica";
+}
+
 .centre {
     display: flex;
     justify-content: center;
@@ -315,14 +329,14 @@ async function signIn() {
   gap: 5px;
 }
 
-.email-field input {
+.input-email  {
   width: 285px !important;
   height: 40px !important;
   border-radius: 4px;
   /* outline: none; */
 }
 
-.email-field input:focus input:hover {
+.input-email:focus .input-email:hover {
     border: 1px solid #0082bb !important;
     outline: none;
 }
@@ -344,14 +358,14 @@ async function signIn() {
   margin-bottom: 10px;
 }
 
-.password-field input {
+.input-password {
   width: 285px !important;
   height: 40px !important;
   border-radius: 4px;
   /* outline: none; */
 }
 
-.password-field input:focus input:hover {
+.input-password:focus .input-password:hover {
     border: 1px solid #0082bb !important;
     outline: none;
 }

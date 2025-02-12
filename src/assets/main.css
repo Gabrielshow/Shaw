@@ -1,21 +1,133 @@
 @import './base.css';
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
 #app {
   height: 100vh;
   width: 100vw;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+/* Reset CSS for buttons */
+button, input[type="button"], input[type="submit"], input[type="reset"], textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  appearance: none;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
+button {
+  background-color: #0082bb; /* Default button background */
+  color: white; /* Default text color */
+  padding: 10px 20px; /* Default padding */
+  font-weight: bold; /* Optional: Bold text for buttons */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #0082bb; /* Button border */
+}
+
+button:hover {
+  background-color: #0074a7; /* Button hover background */
+  border-color: #0074a7; /* Button hover border */
+}
+
+button:focus {
+  outline: none; /* Remove focus outline */
+  border-color: #0082bb; /* Ensure focus border color matches default */
+}
+
+button:disabled {
+  background-color: #ccc; /* Disable button color */
+  color: #888; /* Disable text color */
+  cursor: not-allowed; /* Change cursor to indicate disabled */
+  border-color: #ccc; /* Disable border color */
+}
+
+button:active {
+  background-color: #006699; /* Button active state */
+  border-color: #006699; /* Button active border */
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+  background-color: #0074a7; /* Same hover effect as button */
+  border-color: #0074a7;
+}
+
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
+  background-color: #006699; /* Active state for buttons */
+  border-color: #006699;
+}
+
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+  outline: none; /* Remove default focus outline for input buttons */
+  border-color: #0082bb; /* Focus state border color */
+}
+
+
+/* Reset CSS for input elements */
+input, textarea, select, button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  border: 1px solid #ccc; /* Default border color */
+  background-color: #fff; /* Default background color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #0082bb; /* Custom blue border on focus */
+}
+
+/* Adding focus states to buttons and inputs for clarity */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+textarea:hover,
+select:hover {
+  border-color: #0074a7; /* Change border color on hover */
+}
+
+input[type="checkbox"]:checked {
+  background-color: #0082bb; /* Optional: Checkbox checked style */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border-radius: 4px; /* Optional: Rounded corners */
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 2px solid #0082bb; /* Focus state border */
+}
