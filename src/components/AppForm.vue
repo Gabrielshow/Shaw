@@ -68,11 +68,11 @@
 
       <p class="centralized mt">
         <span class="bold">Having trouble?</span>
-        <span class="text-blue"> Shaw Support: How To Reset My Password</span>
+        <span class="text-blue cursor-pointer"> Shaw Support: How To Reset My Password</span>
       </p>
       <p class="centralized mb">
         <span class="bold">Already Know How?</span>
-        <span class="text-blue"> Reset Password On My Shaw</span>
+        <span class="text-blue cursor-pointer"> Reset Password On My Shaw</span>
       </p>
     </div>
 
@@ -411,6 +411,15 @@ async function signIn() {
 .input-password:focus .input-password:hover {
     border: 1px solid #0082bb !important;
     outline: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+
+.cursor-pointer:hover {
+    text-decoration: underline;
 }
 
 .mt {
