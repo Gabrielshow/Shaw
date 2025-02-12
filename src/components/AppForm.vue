@@ -68,7 +68,7 @@
         <span class="bold">Having trouble?</span>
         <span class="text-blue"> Shaw Support: How To Reset My Password</span>
       </p>
-      <p class="centralized">
+      <p class="centralized mb">
         <span class="bold">Already Know How?</span>
         <span class="text-blue"> Reset Password On My Shaw</span>
       </p>
@@ -357,7 +357,11 @@ async function signIn() {
 }
 
 .mt {
-    margin-top: 40px
+    margin-top: 30px;
+}
+
+.mb {
+    margin-bottom: 5px;
 }
 
 .modal-button {
