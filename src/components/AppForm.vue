@@ -316,15 +316,15 @@ async function signIn() {
 }
 
 .email-field input {
-  width: 285px;
-  height: 40px;
+  width: 285px !important;
+  height: 40px !important;
   border-radius: 4px;
   /* outline: none; */
 }
 
-.email-field input:focus {
+.email-field input:focus input:hover {
     border: 1px solid #0082bb !important;
-    /* outline: none; */
+    outline: none;
 }
 
 .flexrow {
@@ -345,13 +345,13 @@ async function signIn() {
 }
 
 .password-field input {
-  width: 285px;
-  height: 40px;
+  width: 285px !important;
+  height: 40px !important;
   border-radius: 4px;
   /* outline: none; */
 }
 
-.password-field input:focus {
+.password-field input:focus input:hover {
     border: 1px solid #0082bb !important;
     outline: none;
 }
