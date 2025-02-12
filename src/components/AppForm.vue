@@ -364,6 +364,10 @@ async function signIn() {
     margin-bottom: 20px;
 }
 
+.footer-small {
+  font-size: 10px;
+}
+
 .modal-button {
   width: 100%;
   padding: 10px;
