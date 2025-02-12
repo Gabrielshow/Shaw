@@ -52,7 +52,7 @@
 
         <!-- Remember me checkbox -->
         <div class="gap">
-          <input type="checkbox" value="Remember Shaw email" />
+          <input type="checkbox" value="Remember Shaw email" class="checkbox" />
           <p class="checkbox-font">Remember Shaw email</p>
         </div>
       </div>
@@ -285,10 +285,53 @@ async function signIn() {
   font-size: 14px;
 }
 
+/* Style the checkbox container */
 .gap {
   display: flex;
-  gap: 5px;
+  align-items: center;
+  margin: 10px 0;
 }
+
+/* Hide the default checkbox appearance */
+.checkbox {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* When the checkbox is checked, change the color */
+.checkbox:checked {
+  background-color: #0082bb;
+  border-color: #0082bb;
+}
+
+/* Create a checkmark when the checkbox is checked */
+/* .checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  clip-path: polygon(0% 50%, 40% 100%, 100% 0%, 100% 60%, 40% 100%);
+} */
+
+/* Style for the text next to the checkbox */
+.checkbox-font {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+}
+
 
 .black {
   font-weight: 700;
