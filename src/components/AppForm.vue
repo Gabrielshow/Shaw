@@ -29,7 +29,7 @@
             />
             <div class="icon-div">
               <img
-                src="@/assets/helpicon.png"
+                src="@/assets/helpIcon.png"
                 alt="helpIcon"
                 class="help"
               />
