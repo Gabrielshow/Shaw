@@ -365,7 +365,7 @@ async function signIn() {
 }
 
 .footer-small {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .modal-button {
