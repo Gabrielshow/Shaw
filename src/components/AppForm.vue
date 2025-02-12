@@ -244,7 +244,7 @@ async function signIn() {
   margin-bottom: 20px;
   padding: 10px;
   background: white;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .centre {
@@ -361,7 +361,7 @@ async function signIn() {
 }
 
 .mb {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .modal-button {
